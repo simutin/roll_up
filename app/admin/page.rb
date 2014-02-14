@@ -7,12 +7,12 @@ ActiveAdmin.register Page do
 
 	index do
 		sortable_handle_column
-    column :position, :sortable => :position
-    column :name
-    column :slug
-    column :content
-    column :hidden
-    default_actions
-  end
-    form partial: 'form'
+		column :position, :sortable => :position
+		column :name
+		column :slug
+		column :content
+		column :hidden
+		default_actions
+	end
+	form partial: 'form'
 end
