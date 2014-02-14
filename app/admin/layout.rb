@@ -1,4 +1,5 @@
 ActiveAdmin.register Layout do
-actions :all, :except => [:destroy]
-form partial: 'form'
+	menu :priority => 1
+	actions :all, :except => [:destroy, :new]
+	form partial: 'form'
 end

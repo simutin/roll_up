@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require_tree
 //= require jquery.ui.all
+<<<<<<< HEAD
+
+=======
+>>>>>>> cb10c331b8ce25c72079ec3f21399325426c508f
