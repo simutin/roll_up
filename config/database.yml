@@ -1,0 +1,24 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: rolls_dev
+  username: root
+  password: '123'
+  socket:  /var/run/mysqld/mysqld.sock
+
+test: &test
+  adapter: mysql2
+  encoding: utf8
+  database: rolls_test
+  username: root
+  password: '123'
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: rolls_prod
+  username: root
+  password: ''
+
+cucumber:
+  <<: *test
