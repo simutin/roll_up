@@ -12,6 +12,7 @@ gem 'ancestry'
 gem 'paperclip'
 gem 'ckeditor'
 
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -53,6 +54,7 @@ group :test do
 end
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'unicorn'
 gem 'ffaker'
 gem 'factory_girl_rails'

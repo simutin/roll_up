@@ -371,6 +371,7 @@ DEPENDENCIES
   guard-rspec
   guard-spork!
   jquery-rails
+  jquery-ui-rails
   mysql2
   paperclip
   rails (= 3.2.13)

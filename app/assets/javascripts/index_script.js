@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	$('ul#list li').shuffle();
 
 	var fullHeight = $(window).height();
 	if(fullHeight > 980) { $('.wrapper').css({'margin-top':(fullHeight-980)/2+'px'}); }
@@ -9,47 +8,28 @@ $(document).ready(function(){
 		if(fullHeight > 980) { $('.wrapper').css({'margin-top':(fullHeight-980)/2+'px'}); }
 		else { $('.wrapper').css({'margin-top':'0px'});}
 	});
-	
-	$(".block").mouseenter(function(){
-		var direction = "-98px";
-		
-		if($(this).hasClass("first")) { var direction = "0px"; }
-		if($(this).hasClass("last"))  { var direction = "-196px"; }
 
+	$(".column").mouseenter(function(){
 		$(this).addClass("current");
-		$(this).find(".column").stop().animate({
-			width: "392px",
-			left: direction
-			}, 500, function() {
-			// Animation complete.
-			}
-		);
+		$(this).find(".stand_name").addClass("current_name")
+    $(this).stop().animate({
+    },500);
+    $(this).find(".stand_name").stop().animate({
+      backgroundColor: "#cb272e",
+      color: "#fff",
+	    },500);
 			
-		$(this).find(".thumb").stop().animate({
-			height: "60%"
-			}, 500, function() {
-				
-			}
-		);
-
-
-
 	}).mouseleave(function(){
-		$(this).removeClass("current");
-		$(this).find(".column").stop().animate({
-			width: "196px",
-			left: "0px"
-			}, 500, function() {
-				$(this).parent(".block").removeClass("current");
-			}
-		);
-		$(this).find(".thumb").stop().animate({
-			height: "35%"
-			}, 500, function() {
-				
-			}
-		);
-
+		$(this).removeClass("current")
+		$(this).stop().animate({
+    },500);
+		if ( $(this).hasClass("no_border") ) {
+		  $(this).stop().animate({
+		}, 500)};
+    $(this).find(".stand_name").stop().animate({
+      backgroundColor: "#fff",
+      color: "#949597",
+    },500, function() {$(this).find(".stand_name").removeClass("current_name");
+			});
 	});
-  
 });

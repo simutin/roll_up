@@ -6,9 +6,74 @@ $short-sprite-dimensions: true;
 .wrapper {max-width:980px; margin:0 auto; }
 .wrapper-modal {padding:0 330px 0 0; @include box-sizing(border-box); position:relative; z-index:10; }
 
-.header {}
-.header .span12 {padding:40px 0px 40px 0px; position: relative;}
-.header-logo {}
+/* Header */
+
+.header {
+  overflow: hidden;
+  padding-top: 15px;
+}
+.main_content {
+	padding-top: 10px;
+}
+.site_title {
+	font-size: 48px;
+	font-weight: bold;
+	color: #949597;
+	text-align: right;
+	float: left;
+	border-right: 5px solid #cb272e;
+	overflow: hidden;
+	width: 302px;
+	padding-right: 10px;
+	line-height: 39px;
+	margin-top: 40px;
+}
+.head_info {
+	font-size: 26px;
+	float: left;
+	width: 297px;
+	padding: 0px 15px;
+	line-height: 28px;
+	margin-top: 40px;
+	font-weight: bold;
+}
+.chaplin {
+	background: url(../assets/chaplin.png) no-repeat;
+	float: left;
+	height: 200px;
+	width: 100px;
+}
+.standee_logo {
+	background: transparent;
+  margin-top: -29px;
+  margin-bottom: 30px;
+}
+
+.speech {
+	background: url(../assets/words.png) no-repeat;
+	float: left;
+	width: 281px;
+	height: 160px;
+	margin-top: 30px;
+}
+/* Footer */
+
+.footer {
+	overflow: hidden;
+}
+.stlogo {
+	background: url(../assets/stlogo.png);
+	float: left;
+	width: 150px;
+	height: 150px;
+}
+.adress {
+	width: 150px;
+	height: 120px;
+	float: left;
+	margin-left: 20px;
+	padding: 30px 0;
+}
 
 .lang {position: absolute; top:-5px; right:0px; margin:0; padding:0; list-style: none;}
 .lang-ru,.lang-en {float:left; margin:5px 0 0 5px;  }
@@ -19,10 +84,8 @@ $short-sprite-dimensions: true;
 
 .btop-container-height {overflow:hidden;}
 
-.content {}
 .content h1 {font-size:26px;}
 
-.footer {padding:50px 0 20px 0; color:#888;}
 
 .fade { @include transition(opacity 0.5s linear); opacity:0;}
 
@@ -32,32 +95,44 @@ $short-sprite-dimensions: true;
 	width: 196px;
 	height: 100%;
 	background: #fff;
-	border-left: 1px dashed #ccc;
 	border-right: 1px dashed #ccc;
-	padding-left: 5px;
-	padding-right: 5px;
+	border-left: 1px dashed #fff;
+	border-top: 1px dashed #fff;
+	border-bottom: 1px dashed #fff;
+	padding: 3px;
+}
+.no_border {
+	border-right: 1px dashed #fff;
+	border-left: 1px dashed #fff;
+	border-top: 1px dashed #fff;
+	border-bottom: 1px dashed #fff;
 }
 .block {
-	height: 900px;
+	height: 850px;
 	position: relative;
 	float: left;
 	width: 196px;
 	background: #fff;
-
 }
 .stand_descr {
 	color: #949597;
 	overflow: hidden;
 	font-size: 18px;
 	font-weight: bold;
+	padding-bottom: 20px;
 }
-.stand_name, .stand_name:hover, .stand_name:active {
+.stand_name{
 	font-size: 24px;
 	font-weight: bold;
 	color: #949597;
 	text-decoration: none;
 	float: left;
 	clear: both;
+	width: 196px;
+}
+.stand_name:hover, .stand_name:active {
+	color: #fff;
+	text-decoration: none;
 }
 .stand_size {
 	float: left;
@@ -67,6 +142,10 @@ $short-sprite-dimensions: true;
 	color: #cb272e;
 	float: left;
 	padding-left: 6px;
+}
+.stand_info {
+	height: 450px;
+	padding: 3px;
 }
 .order {
 	text-align: center;
@@ -119,7 +198,7 @@ a.button:active  {
 	margin: auto;
 }
 .current {
-	z-index: 100;
+	box-shadow: inset 0px 0px 0px 3px #cb272e;
 }
 .main_content {
 	clear:both
@@ -130,7 +209,7 @@ a.button:active  {
 .thumb {
 	position: absolute;
 	bottom: 20px;
-	height: 35%;
+	height: 25%;
 	right: 0;
 	left: 0;
 	margin: auto;
