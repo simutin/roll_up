@@ -1,23 +1,23 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: roll_dev
+  database: rolls_dev
   username: root
-  password: 'Ghfdlbycr12mysql'
+  password: '123'
 
 test: &test
   adapter: mysql2
   encoding: utf8
-  database: roll_test
+  database: rolls_test
   username: root
-  password: 'Ghfdlbycr12mysql'
+  password: '123'
 
 production:
   adapter: mysql2
   encoding: utf8
-  database: roll_prod
+  database: rolls_prod
   username: root
-  password: 'Ghfdlbycr12mysql'
+  password: '123'
 
 cucumber:
   <<: *test
