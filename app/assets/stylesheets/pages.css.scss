@@ -95,6 +95,7 @@ $short-sprite-dimensions: true;
 	width: 196px;
 	height: 100%;
 	background: #fff;
+<<<<<<< HEAD
 	padding-left: 5px;
 	padding-right: 5px;
 	border-top: 1px solid #fff;
@@ -106,20 +107,40 @@ $short-sprite-dimensions: true;
 	z-index: 1000;
 	box-shadow: inset;
   box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+=======
+	border-right: 1px dashed #ccc;
+	border-left: 1px dashed #fff;
+	border-top: 1px dashed #fff;
+	border-bottom: 1px dashed #fff;
+	padding: 3px;
+}
+.no_border {
+	border-right: 1px dashed #fff;
+	border-left: 1px dashed #fff;
+	border-top: 1px dashed #fff;
+	border-bottom: 1px dashed #fff;
+>>>>>>> cb10c331b8ce25c72079ec3f21399325426c508f
 }
 
 .block {
+<<<<<<< HEAD
 	z-index: 600;
 	display: block;
 	height: 900px;
+=======
+	height: 850px;
+>>>>>>> cb10c331b8ce25c72079ec3f21399325426c508f
 	position: relative;
 	float: left;
 	width: 196px;
 	background: #fff;
+<<<<<<< HEAD
 .current_name {
 	width: 196px;
 }
 
+=======
+>>>>>>> cb10c331b8ce25c72079ec3f21399325426c508f
 }
 .row-fluid content {
 	z-index: 500;
@@ -129,6 +150,7 @@ $short-sprite-dimensions: true;
 	overflow: hidden;
 	font-size: 18px;
 	font-weight: bold;
+	padding-bottom: 20px;
 }
 .stand_name{
 	font-size: 24px;
@@ -137,6 +159,11 @@ $short-sprite-dimensions: true;
 	text-decoration: none;
 	float: left;
 	clear: both;
+	width: 196px;
+}
+.stand_name:hover, .stand_name:active {
+	color: #fff;
+	text-decoration: none;
 }
 
 .stand_name:hover, .stand_name:active {
@@ -152,6 +179,10 @@ $short-sprite-dimensions: true;
 	color: #cb272e;
 	float: left;
 	padding-left: 6px;
+}
+.stand_info {
+	height: 450px;
+	padding: 3px;
 }
 .order {
 	text-align: center;
@@ -203,7 +234,13 @@ a.button:active  {
 	width: 1252px;
 	margin: auto;
 }
+<<<<<<< HEAD
 .current {}
+=======
+.current {
+	box-shadow: inset 0px 0px 0px 3px #cb272e;
+}
+>>>>>>> cb10c331b8ce25c72079ec3f21399325426c508f
 .main_content {
 	clear:both
 }
@@ -213,7 +250,7 @@ a.button:active  {
 .thumb {
 	position: absolute;
 	bottom: 20px;
-	height: 35%;
+	height: 25%;
 	right: 0;
 	left: 0;
 	margin: auto;
