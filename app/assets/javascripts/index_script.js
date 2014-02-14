@@ -30,14 +30,14 @@ $(document).ready(function(){
 	});
 	
 	$(".block").mouseenter(function(){
-		var direction = "-120px";
+		var direction = "-98px";
 		
 		if($(this).hasClass("first")) { var direction = "0px"; }
-		if($(this).hasClass("last"))  { var direction = "-240px"; }
+		if($(this).hasClass("last"))  { var direction = "-196px"; }
 
 		$(this).addClass("current");
 		$(this).find(".column").stop().animate({
-			width: "480px",
+			width: "392px",
 			left: direction
 			}, 500, function() {
 			// Animation complete.
@@ -56,7 +56,7 @@ $(document).ready(function(){
 	}).mouseleave(function(){
 		$(this).removeClass("current");
 		$(this).find(".column").stop().animate({
-			width: "240px",
+			width: "196px",
 			left: "0px"
 			}, 500, function() {
 				$(this).parent(".block").removeClass("current");
