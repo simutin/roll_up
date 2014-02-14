@@ -13,18 +13,6 @@ $(document).ready(function(){
 		$(this).addClass("current");
 		$(this).find(".stand_name").addClass("current_name")
     $(this).stop().animate({
-<<<<<<< HEAD
-      borderTopColor: "#cb272e",
-			borderBottomColor: "#cb272e",
-			borderLeftColor: "#cb272e",
-			borderRightColor: "#cb272e",
-			borderLeftStyle: "solid",
-			borderTopStyle: "solid",
-			borderRightStyle: "solid",
-			borderBottomStyle: "solid",
-			borderWidth: "1px",
-=======
->>>>>>> cb10c331b8ce25c72079ec3f21399325426c508f
     },500);
     $(this).find(".stand_name").stop().animate({
       backgroundColor: "#cb272e",
@@ -32,23 +20,6 @@ $(document).ready(function(){
 	    },500);
 			
 	}).mouseleave(function(){
-<<<<<<< HEAD
-		$(this).stop().animate({
-      borderTopColor: "#fff",
-			borderBottomColor: "#949597",
-			borderLeftColor: " #949597",
-			borderRightColor: " #fff",
-			borderLeftStyle: "dashed",
-			borderTopStyle: "solid",
-			borderRightStyle: "solid ",
-			borderBottomStyle: "dashed",
-			borderWidth: "1px"
-    },500, function() {$(this).removeClass("current");
-			});
-    $(this).find(".stand_name").stop().animate({
-      backgroundColor: "#fff",
-      color: "#ccc",
-=======
 		$(this).removeClass("current")
 		$(this).stop().animate({
     },500);
@@ -58,7 +29,6 @@ $(document).ready(function(){
     $(this).find(".stand_name").stop().animate({
       backgroundColor: "#fff",
       color: "#949597",
->>>>>>> cb10c331b8ce25c72079ec3f21399325426c508f
     },500, function() {$(this).find(".stand_name").removeClass("current_name");
 			});
 	});
