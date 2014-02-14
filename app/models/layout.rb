@@ -1,3 +1,3 @@
 class Layout < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :content, :name
 end
