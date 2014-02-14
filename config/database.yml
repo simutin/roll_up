@@ -17,7 +17,7 @@ production:
   encoding: utf8
   database: roll_prod
   username: root
-  password: '123'
+  password: '123s'
 
 cucumber:
   <<: *test
