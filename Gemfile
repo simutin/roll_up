@@ -66,7 +66,6 @@ gem 'factory_girl_rails'
 gem 'acts_as_list' #Драг и дроп
 
 gem 'activeadmin-sortable'
-gem 'jquery-ui-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
