@@ -60,7 +60,6 @@ group :test do
 end
 
 gem 'jquery-rails'
-gem 'jquery-ui-rails'
 gem 'unicorn'
 gem 'ffaker'
 gem 'factory_girl_rails'
