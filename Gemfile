@@ -14,6 +14,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'ancestry'
 gem 'paperclip'
 gem 'ckeditor'
+gem 'russian'
 
 
 # Gems used only for assets and not required
