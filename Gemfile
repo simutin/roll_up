@@ -14,6 +14,8 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'ancestry'
 gem 'paperclip'
 gem 'ckeditor'
+gem 'carrierwave'
+gem 'mini_magick'
 gem 'russian'
 
 
