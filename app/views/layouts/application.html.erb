@@ -8,13 +8,9 @@
 </head>
 <body>
 	<div class="wrapper">
-			<%= raw @header.content %>
-			<%= render 'shared/menu' %>
-
+		<%= render 'shared/header'%>
 		<%= yield %>
-
-			<%= raw @footer.content %>
-
+		<%= render 'shared/footer'%>
 	</div>
 </body>
 </html>
