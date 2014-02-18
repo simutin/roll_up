@@ -35,7 +35,7 @@ $short-sprite-dimensions: true;
 	color: #949597;
 }
 
-.site_name:hover .site_name:active{
+.site_name:hover, .site_name:active{
 	text-decoration:none;
 	color: #949597;
 }
