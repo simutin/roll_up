@@ -5,6 +5,9 @@ class PagesController < ApplicationController
     render params[:slug] if controller_view_exists?(params[:slug])
   end
 
+  def order
+
+  end
   private
 
   def view_exists?(view)

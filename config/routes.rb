@@ -9,6 +9,7 @@ RollUp::Application.routes.draw do
   get ':slug' => 'pages#show', :as => :page_slug 
 
   resources :pages
+  resources :orders
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
