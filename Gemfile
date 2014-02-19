@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
-
+if RUBY_VERSION =~ /1.9/
+Encoding.default_external = Encoding::UTF_8
+Encoding.default_internal = Encoding::UTF_8
+end
 gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
@@ -11,6 +14,9 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'ancestry'
 gem 'paperclip'
 gem 'ckeditor'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'russian'
 
 
 # Gems used only for assets and not required

@@ -12,6 +12,7 @@ ActiveAdmin.setup do |config|
   #
   # config.site_title_link = "/"
   config.register_javascript 'ckeditor/init.js'
+  config.before_filter :set_admin_locale
   # Set an optional image to be displayed for the header
   # instead of a string (overrides :site_title)
   #

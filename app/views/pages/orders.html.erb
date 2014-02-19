@@ -1,0 +1,18 @@
+<% provide(:title, @page.name) %>
+
+<% order = @order || Order.new %>
+
+<div>
+<%= form_for(order) do |f| %>
+  <div>
+  	<%= render 'shared/error_messages', object: f.object %>
+  	<%= f.text_field :name, placeholder: "Ваше имя" %>
+  	<%= f.text_field :company, placeholder: "Компания" %>
+  	<%= f.text_field :phone, placeholder: "Телефон" %>
+  	<%= f.text_field :email, placeholder: "E-mail" %>
+    <%= f.text_area :content, placeholder: "Описание заказа..." %>
+ 	</div>  
+  
+  <%= f.submit "Заказать", class: "button" %>
+<% end %>
+</div>

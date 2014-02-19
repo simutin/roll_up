@@ -10,13 +10,13 @@
     <%= f.input :content, as: :ckeditor, label: 'Контент' %>
   <% end %>
 
-  <!--<%= f.inputs "SEO" do %>
+  <%= f.inputs "SEO" do %>
     <%= f.semantic_fields_for :seo do |j| %>
       <%= j.input :title, input_html: {rows: 1} %>
       <%= j.input :keywords, input_html: {rows: 1} %>
       <%= j.input :description, input_html: {rows: 1} %>
     <% end %>
   <% end %>
--->
+
   <%= f.actions %>
 <% end %>

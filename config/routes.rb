@@ -1,14 +1,15 @@
 RollUp::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
+  
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-
-  mount Ckeditor::Engine => '/ckeditor'
   
   root :to => "pages#show", :slug => 'index'
   
   get ':slug' => 'pages#show', :as => :page_slug 
 
   resources :pages
+  resources :orders
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

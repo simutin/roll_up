@@ -27,6 +27,19 @@ $short-sprite-dimensions: true;
 	padding-right: 10px;
 	line-height: 39px;
 	margin-top: 40px;
+	site_name {
+	color: #949597;
+}
+
+.site_name {
+	color: #949597;
+}
+
+.site_name:hover, .site_name:active{
+	text-decoration:none;
+	color: #949597;
+}
+
 }
 .head_info {
 	font-size: 26px;
@@ -209,7 +222,7 @@ a.button:active  {
 .thumb {
 	position: absolute;
 	bottom: 20px;
-	height: 25%;
+	height: 20%;
 	right: 0;
 	left: 0;
 	margin: auto;
